@@ -8,9 +8,8 @@ env:
   global:
     - PACKAGE_NAME=neonavigation_msgs
   matrix:
-    - ROS_DISTRO_TARGET=kinetic
     - ROS_DISTRO_TARGET=indigo
-    - ROS_DISTRO_TARGET=lunar
+    - ROS_DISTRO_TARGET=kinetic
     - ROS_DISTRO_TARGET=melodic
 branches:
   only:
