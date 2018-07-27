@@ -12,12 +12,14 @@ cd /catkin_ws
 
 sync
 
-catkin_lint `find . -name package.xml | xargs -n1 dirname` \
+
+pkgs=`find . -name package.xml | xargs -n1 dirname`
+catkin_lint $pkgs \
   || (gh-pr-comment "[#${TRAVIS_BUILD_NUMBER}] FAILED on ${ROS_DISTRO}" \
       "<details><summary>catkin_lint failed</summary>
 
 \`\`\`
-`catkin_lint `find . -name package.xml | xargs -n1 dirname` 2>&1`
+`catkin_lint $pkgs 2>&1`
 \`\`\`
 </details>"; false)
 
