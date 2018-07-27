@@ -23,6 +23,5 @@ generate_messages(
 catkin_package(
   CATKIN_DEPENDS
     geometry_msgs
-    message_runtime
     std_msgs
 )
