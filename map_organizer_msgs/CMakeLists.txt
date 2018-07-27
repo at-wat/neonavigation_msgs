@@ -18,5 +18,6 @@ generate_messages(
 
 catkin_package(
   DEPENDS
+    message_runtime
     nav_msgs
 )

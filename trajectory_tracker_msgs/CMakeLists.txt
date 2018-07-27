@@ -23,5 +23,6 @@ generate_messages(
 
 catkin_package(
   DEPENDS
+    message_runtime
     std_msgs
 )
