@@ -1,5 +1,5 @@
 std_msgs/Header header
 geometry_msgs/Pose pose
 
-# velocity_linear field represents maximum linear velocity at the pose.
-float32 velocity_linear
+# linear_velocity field represents maximum linear velocity in base_link coordinate frame
+geometry_msgs/Vector3 linear_velocity
