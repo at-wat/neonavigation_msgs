@@ -26,8 +26,30 @@ generate_messages(
 )
 
 catkin_package(
+  INCLUDE_DIRS include
   CATKIN_DEPENDS
     message_runtime
     geometry_msgs
     std_msgs
+)
+
+include_directories(${catkin_INCLUDE_DIRS} include)
+
+if(CATKIN_ENABLE_TESTING)
+  set(THREADS_PREFER_PTHREAD_FLAG ON)
+  find_package(Threads REQUIRED)
+
+  find_package(roscpp REQUIRED)
+  find_package(rosunit REQUIRED)
+
+  catkin_add_gtest(test_convert test/src/test_convert.cpp)
+  target_link_libraries(test_convert ${catkin_LIBRARIES} ${CMAKE_THREAD_LIBS_INIT})
+
+  find_package(roslint REQUIRED)
+  roslint_cpp()
+  roslint_add_test()
+endif()
+
+install(DIRECTORY include/${PROJECT_NAME}
+  DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
 )
