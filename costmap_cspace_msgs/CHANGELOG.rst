@@ -2,8 +2,8 @@
 Changelog for package costmap_cspace_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.3.0 (2018-12-21)
+------------------
 * Fix package dependencies (`#5 <https://github.com/at-wat/neonavigation_msgs/issues/5>`_)
 
   * Fix package dependencies

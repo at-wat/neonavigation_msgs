@@ -2,8 +2,8 @@
 Changelog for package planner_cspace_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.3.0 (2018-12-21)
+------------------
 * Add some more error state number of PlannerStatus (`#7 <https://github.com/at-wat/neonavigation_msgs/issues/7>`_)
 * Fix package dependencies (`#5 <https://github.com/at-wat/neonavigation_msgs/issues/5>`_)
 

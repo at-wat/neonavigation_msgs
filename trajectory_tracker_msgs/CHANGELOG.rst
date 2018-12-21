@@ -2,8 +2,8 @@
 Changelog for package trajectory_tracker_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.3.0 (2018-12-21)
+------------------
 * trajectory_tracker_msgs: add PathWithVelocity message (`#9 <https://github.com/at-wat/neonavigation_msgs/issues/9>`_)
 
   * Add PathWithVelocity
