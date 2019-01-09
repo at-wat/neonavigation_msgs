@@ -2,8 +2,8 @@
 Changelog for package trajectory_tracker_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.3.1 (2019-01-09)
+------------------
 * trajectory_tracker_msgs: fix header install directory (`#13 <https://github.com/at-wat/neonavigation_msgs/issues/13>`_)
 * Contributors: Atsushi Watanabe
 
