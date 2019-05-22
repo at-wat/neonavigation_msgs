@@ -3,8 +3,6 @@
 set -o errexit
 
 source /opt/ros/${ROS_DISTRO}/setup.bash
-source /catkin_ws/devel/setup.bash
-
 cd /catkin_ws
 
 
@@ -23,7 +21,7 @@ sed -i -e '5a set(CMAKE_C_FLAGS "-Wall -Werror -O2")' \
 sed -i -e '5a set(CMAKE_CXX_FLAGS "-Wall -Werror -O2")' \
   /opt/ros/${ROS_DISTRO}/share/catkin/cmake/toplevel.cmake
 
-CM_OPTIONS=""
+CM_OPTIONS=${CM_OPTIONS:-}
 
 catkin_make ${CM_OPTIONS} \
   || (gh-pr-comment "[#${TRAVIS_BUILD_NUMBER}] FAILED on ${ROS_DISTRO}" '```catkin_make``` failed'; false)
