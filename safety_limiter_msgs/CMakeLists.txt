@@ -3,15 +3,21 @@ project(safety_limiter_msgs)
 
 find_package(catkin REQUIRED COMPONENTS
   message_generation
-)
-
-catkin_package()
-
-include_directories(
-  ${catkin_INCLUDE_DIRS}
+  std_msgs
 )
 
 add_message_files(
   FILES
     SafetyLimiterStatus.msg
+)
+
+generate_messages(
+  DEPENDENCIES
+    std_msgs
+)
+
+catkin_package(
+  CATKIN_DEPENDS
+    message_runtime
+    std_msgs
 )
