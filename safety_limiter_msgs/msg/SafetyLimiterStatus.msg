@@ -8,4 +8,4 @@ int8 status
 float64 limit_ratio
 bool is_cloud_available
 bool has_watchdog_timed_out
-Time stuck_started_since
+time stuck_started_since
