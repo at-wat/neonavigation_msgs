@@ -2,8 +2,8 @@
 Changelog for package map_organizer_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.5.0 (2019-10-02)
+------------------
 * Drop ROS Indigo and Ubuntu Trusty support (`#15 <https://github.com/at-wat/neonavigation_msgs/issues/15>`_)
 * Contributors: Atsushi Watanabe
 
