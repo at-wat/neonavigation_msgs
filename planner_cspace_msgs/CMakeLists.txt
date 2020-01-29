@@ -13,7 +13,7 @@ add_action_files(
   DIRECTORY
     action
   FILES
-    MoveFlex.action
+    MoveWithTolerance.action
 )
 
 add_message_files(

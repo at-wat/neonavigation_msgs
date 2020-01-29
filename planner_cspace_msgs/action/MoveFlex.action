@@ -1,7 +1,0 @@
-geometry_msgs/PoseStamped target_pose
-float64 goal_tolerance_lin
-float64 goal_tolerance_ang
-float64 goal_tolerance_ang_finish
----
----
-geometry_msgs/PoseStamped base_position
