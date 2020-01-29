@@ -2,6 +2,9 @@
 Changelog for package neonavigation_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.5.0 (2019-10-02)
 ------------------
 * Add safety_limiter_msgs package (`#16 <https://github.com/at-wat/neonavigation_msgs/issues/16>`_)
