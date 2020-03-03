@@ -2,6 +2,9 @@
 Changelog for package planner_cspace_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.7.0 (2020-01-29)
 ------------------
 * planner_cspace_msgs: define a Move action having tolerance parameters (`#23 <https://github.com/at-wat/neonavigation_msgs/issues/23>`_)

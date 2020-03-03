@@ -2,6 +2,9 @@
 Changelog for package map_organizer_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.7.0 (2020-01-29)
 ------------------
 
