@@ -2,6 +2,9 @@
 Changelog for package costmap_cspace_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.8.0 (2020-03-03)
 ------------------
 

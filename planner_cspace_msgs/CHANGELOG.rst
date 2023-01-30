@@ -2,6 +2,11 @@
 Changelog for package planner_cspace_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* planner_cspace_msgs: add continuous movement mode to MoveWithTolerance action (`#56 <https://github.com/at-wat/neonavigation_msgs/issues/56>`_)
+* Contributors: Naotaka Hatao
+
 0.8.0 (2020-03-03)
 ------------------
 
