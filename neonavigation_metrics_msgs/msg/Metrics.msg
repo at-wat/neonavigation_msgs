@@ -1,3 +1,3 @@
 Header header
 
-Metric data[]
+Metric[] data
