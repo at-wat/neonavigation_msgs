@@ -2,6 +2,9 @@
 Changelog for package trajectory_tracker_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 0.12.0 (2023-01-30)
 -------------------
 * trajectory_tracker_msgs: rename test target (`#37 <https://github.com/at-wat/neonavigation_msgs/issues/37>`_)
