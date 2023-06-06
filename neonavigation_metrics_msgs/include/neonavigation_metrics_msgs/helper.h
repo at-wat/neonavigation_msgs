@@ -32,7 +32,6 @@
 
 #include <string>
 #include <utility>
-#include <vector>
 
 #include <neonavigation_metrics_msgs/Metric.h>
 #include <neonavigation_metrics_msgs/Metrics.h>
