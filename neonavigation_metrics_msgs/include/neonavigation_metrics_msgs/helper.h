@@ -43,11 +43,13 @@ template <typename... Strings>
 Metric metric(
     const std::string& name,
     const double value,
+    const std::string& unit,
     Strings&&... tags)
 {
   Metric out;
   out.name = name;
   out.value = value;
+  out.unit = unit;
   (out.tags.push_back(std::forward<Strings>(tags)), ...);
   return out;
 }
