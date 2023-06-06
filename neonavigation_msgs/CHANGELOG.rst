@@ -2,8 +2,8 @@
 Changelog for package neonavigation_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.14.0 (2023-06-06)
+-------------------
 * Add neonavigation_metrics_msgs (`#65 <https://github.com/at-wat/neonavigation_msgs/issues/65>`_)
 * Contributors: Atsushi Watanabe
 
