@@ -21,8 +21,6 @@ catkin_package(
 include_directories(include ${catkin_INCLUDE_DIRS})
 
 if(CATKIN_ENABLE_TESTING)
-  find_package(roscpp REQUIRED)
-
   set(CMAKE_CXX_STANDARD 17)
   set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
