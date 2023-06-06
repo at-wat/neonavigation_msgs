@@ -9,7 +9,8 @@ find_package(catkin REQUIRED COMPONENTS message_generation ${MESSAGE_DEPENDS})
 
 add_message_files(
   FILES
-    KeyValueUnit.msg
+    Metric.msg
+    Metrics.msg
 )
 generate_messages(DEPENDENCIES ${MESSAGE_DEPENDS})
 catkin_package(CATKIN_DEPENDS message_runtime ${MESSAGE_DEPENDS})
