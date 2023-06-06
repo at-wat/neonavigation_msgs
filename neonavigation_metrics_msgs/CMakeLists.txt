@@ -13,4 +13,26 @@ add_message_files(
     Metrics.msg
 )
 generate_messages(DEPENDENCIES ${MESSAGE_DEPENDS})
-catkin_package(CATKIN_DEPENDS message_runtime ${MESSAGE_DEPENDS})
+catkin_package(
+  INCLUDE_DIRS include
+  CATKIN_DEPENDS message_runtime ${MESSAGE_DEPENDS}
+)
+
+include_directories(include ${catkin_INCLUDE_DIRS})
+
+if(CATKIN_ENABLE_TESTING)
+  find_package(roscpp REQUIRED)
+
+  add_compile_options(-std=c++17)
+
+  catkin_add_gtest(test_helper test/src/test_helper.cpp)
+  target_link_libraries(test_helper ${catkin_LIBRARIES})
+
+  find_package(roslint REQUIRED)
+  roslint_cpp()
+  roslint_add_test()
+endif()
+
+install(DIRECTORY include/${PROJECT_NAME}/
+  DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
+)
