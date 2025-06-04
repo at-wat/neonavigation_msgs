@@ -8,6 +8,9 @@ set(MESSAGE_DEPENDS
 
 find_package(catkin REQUIRED COMPONENTS message_generation ${MESSAGE_DEPENDS})
 
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
 add_service_files(
   FILES
     ChangePath.srv
