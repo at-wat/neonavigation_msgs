@@ -8,9 +8,6 @@ set(MESSAGE_DEPENDS
 
 find_package(catkin REQUIRED COMPONENTS message_generation ${MESSAGE_DEPENDS})
 
-set(CMAKE_CXX_STANDARD 14)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
-
 add_service_files(
   FILES
     ChangePath.srv
@@ -28,6 +25,9 @@ catkin_package(
   CATKIN_DEPENDS message_runtime ${MESSAGE_DEPENDS}
 )
 
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
 include_directories(include ${catkin_INCLUDE_DIRS})
 
 if(CATKIN_ENABLE_TESTING)
@@ -36,8 +36,6 @@ if(CATKIN_ENABLE_TESTING)
 
   find_package(roscpp REQUIRED)
   find_package(rosunit REQUIRED)
-
-  add_compile_options(-std=c++11)
 
   catkin_add_gtest(test_path_with_velocity_conversion test/src/test_path_with_velocity_conversion.cpp)
   target_link_libraries(test_path_with_velocity_conversion ${catkin_LIBRARIES} ${CMAKE_THREAD_LIBS_INIT})

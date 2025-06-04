@@ -7,9 +7,6 @@ set(MESSAGE_DEPENDS
 
 find_package(catkin REQUIRED COMPONENTS message_generation ${MESSAGE_DEPENDS})
 
-set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
-
 add_message_files(
   FILES
     Metric.msg
@@ -20,6 +17,9 @@ catkin_package(
   INCLUDE_DIRS include
   CATKIN_DEPENDS message_runtime ${MESSAGE_DEPENDS}
 )
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 include_directories(include ${catkin_INCLUDE_DIRS})
 
