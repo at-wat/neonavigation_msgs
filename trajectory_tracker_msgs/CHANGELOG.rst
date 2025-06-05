@@ -2,8 +2,8 @@
 Changelog for package trajectory_tracker_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+0.14.1 (2025-06-05)
+-------------------
 * Migrate to Alpine ROS 1 (`#74 <https://github.com/at-wat/neonavigation_msgs/issues/74>`_)
 * Contributors: Atsushi Watanabe
 
