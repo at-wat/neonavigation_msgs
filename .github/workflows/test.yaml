@@ -8,8 +8,8 @@ on:
 permissions:
   contents: read
   packages: read
-  issues: write         # posting and hiding bot comments
-  pull-requests: write  # posting and hiding bot comments
+  issues: write         # hiding bot comments
+  pull-requests: write  # hiding bot comments
 
 jobs:
   test:
