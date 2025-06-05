@@ -18,12 +18,12 @@ catkin_package(
   CATKIN_DEPENDS message_runtime ${MESSAGE_DEPENDS}
 )
 
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
 include_directories(include ${catkin_INCLUDE_DIRS})
 
 if(CATKIN_ENABLE_TESTING)
-  set(CMAKE_CXX_STANDARD 17)
-  set(CMAKE_CXX_STANDARD_REQUIRED ON)
-
   catkin_add_gtest(test_helper test/src/test_helper.cpp)
   target_link_libraries(test_helper ${catkin_LIBRARIES})
 
