@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.0.2...3.26)
+cmake_minimum_required(VERSION 3.0...3.26)
 project(planner_cspace_msgs)
 
 set(MESSAGE_DEPENDS
