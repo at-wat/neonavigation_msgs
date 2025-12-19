@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.0...3.26)
 project(safety_limiter_msgs)
 
 find_package(catkin REQUIRED COMPONENTS
